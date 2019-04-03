@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        background: pink;
+        border: 1px solid yellow;
+    }
+</style>
+<body>
+    <div class="box">
+        123
+    </div>
+    <li>1</li>
+</body>
+<script>
+    document.getElementsByClassName("box")[0].onclick=function(){
+        alert("我是带box的div")
+    }
+</script>
+</html>
