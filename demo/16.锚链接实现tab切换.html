@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        a{
+            float: left;
+            width: 120px;
+            height:50px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            background: #000;
+            color: #fff;
+            border:2px solid #fff;
+
+        }
+        div{
+            position: absolute;
+            top:80px;
+            width: 300px;
+            height:300px;
+            background: yellow;
+            display: none;
+        }
+        #box1:target{
+            display: block;
+        }
+        #box2:target{
+            display: block;
+        }
+        #box3:target{
+            display: block;
+        }
+        div:target+a{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box1">第一个内容第一个内容</div>
+<a href="#box1">第一个内容</a>
+
+<div id="box2">第二个内容第二个内容</div>
+<a href="#box2">第二个内容</a>
+
+<div id="box3">第三个内容第三个内容</div>
+<a href="#box3">第三个内容</a>
+<!--
+    :target
+        选取当前地址栏后面的url进行匹配
+-->
+</body>
+</html>
